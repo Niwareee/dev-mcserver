@@ -1,0 +1,6 @@
+{
+  "id": 1,
+  "maxPlayers": 100,
+  "serverType": "LOBBY",
+  "serverState": "ONLINE"
+}

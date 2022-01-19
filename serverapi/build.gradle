@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'net.linguica.maven-settings' version '0.5'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+}
+
+group = 'fr.niware'
+version = '1.0-SNAPSHOT'
+
+shadowJar {
+    archiveFileName = "${project.name}-${project.version}.jar"
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        name = 'velocitypowered-repo'
+        url = 'https://nexus.velocitypowered.com/repository/maven-public/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.redisson:redisson:3.16.7'
+    compileOnly 'com.google.code.gson:gson:2.8.9'
+    compileOnly 'io.papermc.paper:paper:1.17.1-R0.1-SNAPSHOT'
+    compileOnly 'com.velocitypowered:velocity-api:3.1.2-SNAPSHOT'
+    compileOnly 'com.zaxxer:HikariCP:5.0.1'
+    compileOnly 'org.mariadb.jdbc:mariadb-java-client:3.0.2-rc'
+    annotationProcessor 'com.velocitypowered:velocity-api:3.1.2-SNAPSHOT'
+}
+
+publishing {
+    repositories {
+        mavenLocal()
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = rootProject.name
+            from components.java
+        }
+    }
+}

@@ -1,0 +1,6 @@
+name: Lobby
+version: 1.0
+main: fr.niware.lobby.Lobby
+api-version: 1.17
+depend: [ ServerAPI ]
+authors: [ Niware ]

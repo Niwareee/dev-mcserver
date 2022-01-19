@@ -1,0 +1,10 @@
+name: ServerAPI
+version: 1.0
+main: fr.niware.serverapi.paper.ServerAPI
+api-version: 1.17
+authors: [ Niware ]
+libraries:
+  - org.redisson:redisson:3.16.7
+  - com.google.code.gson:gson:2.8.9
+  - com.zaxxer:HikariCP:5.0.0
+  - org.mariadb.jdbc:mariadb-java-client:3.0.2-rc

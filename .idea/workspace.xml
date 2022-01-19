@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e560a37-c8b4-4f27-bc67-277a55473d09" name="Default Changelist" comment="[SydariaAddon] Various updates" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Core">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/DatabaseAPI">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/GameAPI">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/GameAPI/DatabaseAPI">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/GameCore">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Hub">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Proxy">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ServerAPI">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/SydariaAddon">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/lobby">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="C:\Users\Emeric\IdeaProjects\CMD\SydariaAddon">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/SydariaAddon">
+          <activation />
+        </task>
+        <task path="C:\Users\Emeric\IdeaProjects\Mini-Games\GameAPI">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/GameAPI">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/GameCore">
+          <activation />
+        </task>
+        <task path="C:\Users\Emeric\IdeaProjects\Mini-Games\Hub">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Hub">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Proxy">
+          <activation />
+        </task>
+        <task path="C:\Users\Emeric\IdeaProjects\Mini-Games\Proxy">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/GameAPI/DatabaseAPI">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/DatabaseAPI">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ServerAPI">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/lobby">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/serverapi">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/databaseapi">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/proxy">
+          <activation>
+            <after_sync>
+              <task name="generateTemplates" />
+            </after_sync>
+          </activation>
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lobby" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1m4BYq4Y2crO4VzUgXnOMKOpvb7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\serverapi\src\main\java\fr\niware\serverapi\api" />
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\serverapi\src\main\java\fr\niware\serverapi\database" />
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\Proxy\src\main\java\fr\niware\proxy\database" />
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\Proxy\src\main\java\fr\niware\proxy\database\dao" />
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\DatabaseAPI\src\main\java\fr\niware\databaseapi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\serverapi\src\main\java\fr\niware\serverapi\paper\gui" />
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\serverapi\src\main\resources" />
+      <recent name="C:\Users\Emeric\IdeaProjects\Mini-Games\Hub\src\main\resources" />
+      <recent name="C:\Users\Emeric\IdeaProjects\CMD\EventFarm\src\main\java\fr\niware\eventfarm\utils" />
+      <recent name="C:\Users\Emeric\IdeaProjects\CMD\EventFarm\src\main\java\fr\niware\eventfarm\utils\inventory" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="fr.niware.serverapi.paper.listeners.redis" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.niware.serverapi.velocity.register" />
+      <recent name="fr.niware.serverapi.api" />
+      <recent name="fr.niware.serverapi.utils.messages" />
+      <recent name="fr.niware.serverapi.database" />
+      <recent name="fr.niware.databaseapi.utils" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="./gradlew shadowJar -Xlint" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.proxy">
+    <configuration name="Proxy [generateTemplates]" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/proxy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Proxy [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/proxy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServerAPI [prepareKotlinBuildScriptModel]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/serverapi" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="prepareKotlinBuildScriptModel" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServerAPI [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/serverapi" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ServerAPI [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/serverapi" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SydariaAddon build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" value="SydariaAddon build" />
+        <option name="externalProjectPath" value="C:\Users\Emeric\IdeaProjects\CMD\SydariaAddon" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="gameapi build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" value="gameapi build" />
+        <option name="externalProjectPath" value="C:\Users\Emeric\IdeaProjects\Mini-Games\GameAPI" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="hub build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" value="hub build" />
+        <option name="externalProjectPath" value="C:\Users\Emeric\IdeaProjects\Mini-Games\Hub" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lobby [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/lobby" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="proxy build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" value="proxy build" />
+        <option name="externalProjectPath" value="C:\Users\Emeric\IdeaProjects\Mini-Games\Proxy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="proxy" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/proxy" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CMD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CMD" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameAPI build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="useMavenConfig" value="false" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/GameAPI" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Hub build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="useMavenConfig" value="false" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/Hub" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.gameapi build" />
+      <item itemvalue="Gradle.hub build" />
+      <item itemvalue="Gradle.proxy" />
+      <item itemvalue="Gradle.proxy build" />
+      <item itemvalue="Gradle.SydariaAddon build" />
+      <item itemvalue="Gradle.Proxy [generateTemplates]" />
+      <item itemvalue="Gradle.ServerAPI [publishToMavenLocal]" />
+      <item itemvalue="Gradle.Proxy [shadowJar]" />
+      <item itemvalue="Gradle.lobby [jar]" />
+      <item itemvalue="Gradle.ServerAPI [shadowJar]" />
+      <item itemvalue="Gradle.ServerAPI [prepareKotlinBuildScriptModel]" />
+      <item itemvalue="Maven.GameAPI build" />
+      <item itemvalue="Maven.Hub build" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.lobby [jar]" />
+        <item itemvalue="Gradle.ServerAPI [prepareKotlinBuildScriptModel]" />
+        <item itemvalue="Gradle.ServerAPI [shadowJar]" />
+        <item itemvalue="Gradle.ServerAPI [publishToMavenLocal]" />
+        <item itemvalue="Gradle.Proxy [shadowJar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e560a37-c8b4-4f27-bc67-277a55473d09" name="Default Changelist" comment="" />
+      <created>1608743033361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608743033361</updated>
+      <workItem from="1608743034510" duration="110000" />
+      <workItem from="1608743169980" duration="832000" />
+      <workItem from="1608744058491" duration="3241000" />
+      <workItem from="1609501102106" duration="7119000" />
+      <workItem from="1609964007543" duration="965000" />
+      <workItem from="1610560587760" duration="16000" />
+      <workItem from="1619948781333" duration="349000" />
+      <workItem from="1620068399468" duration="1724000" />
+      <workItem from="1621524600048" duration="327000" />
+      <workItem from="1622042494011" duration="2068000" />
+      <workItem from="1622044618071" duration="1941000" />
+      <workItem from="1622199508150" duration="36000" />
+      <workItem from="1622489533137" duration="1119000" />
+      <workItem from="1622495165308" duration="593000" />
+      <workItem from="1622626150114" duration="1796000" />
+      <workItem from="1631998127170" duration="18000" />
+      <workItem from="1631998502113" duration="10060000" />
+      <workItem from="1632049374044" duration="10734000" />
+      <workItem from="1632126079952" duration="5914000" />
+      <workItem from="1632132295427" duration="9505000" />
+      <workItem from="1632245991587" duration="18938000" />
+      <workItem from="1632310024955" duration="37000" />
+      <workItem from="1632400891342" duration="11429000" />
+      <workItem from="1632432584316" duration="1092000" />
+      <workItem from="1632474992618" duration="10072000" />
+      <workItem from="1633251928370" duration="2129000" />
+      <workItem from="1633458394501" duration="696000" />
+      <workItem from="1633472491337" duration="62000" />
+      <workItem from="1633532434307" duration="52000" />
+      <workItem from="1633814728401" duration="435000" />
+      <workItem from="1633858196971" duration="5494000" />
+      <workItem from="1633863909575" duration="1873000" />
+      <workItem from="1633886395723" duration="512000" />
+      <workItem from="1633887504899" duration="8818000" />
+      <workItem from="1634141583247" duration="8000" />
+      <workItem from="1634230390071" duration="1713000" />
+      <workItem from="1634238988060" duration="8462000" />
+      <workItem from="1634376248672" duration="10009000" />
+      <workItem from="1635001952537" duration="58000" />
+      <workItem from="1635198432428" duration="11771000" />
+      <workItem from="1635238146637" duration="38112000" />
+      <workItem from="1635324297648" duration="14089000" />
+      <workItem from="1635400930025" duration="5226000" />
+      <workItem from="1635584010732" duration="12743000" />
+      <workItem from="1635687650035" duration="2459000" />
+      <workItem from="1635696696316" duration="3248000" />
+      <workItem from="1635728981373" duration="2156000" />
+      <workItem from="1635766977176" duration="1548000" />
+      <workItem from="1635784009087" duration="16343000" />
+      <workItem from="1635811305676" duration="277000" />
+      <workItem from="1636047687447" duration="7432000" />
+      <workItem from="1636108712798" duration="3767000" />
+      <workItem from="1636146190400" duration="7794000" />
+      <workItem from="1636200583451" duration="2967000" />
+      <workItem from="1636467584565" duration="6317000" />
+      <workItem from="1636918822046" duration="54000" />
+      <workItem from="1637011533757" duration="11000" />
+      <workItem from="1637011622330" duration="234000" />
+      <workItem from="1637011870127" duration="77000" />
+      <workItem from="1637011954246" duration="311000" />
+      <workItem from="1637012413062" duration="1294000" />
+      <workItem from="1637013751253" duration="266000" />
+      <workItem from="1637014160127" duration="399000" />
+      <workItem from="1637014717874" duration="460000" />
+      <workItem from="1637015346284" duration="1313000" />
+      <workItem from="1637018318903" duration="3508000" />
+      <workItem from="1637055800002" duration="15784000" />
+      <workItem from="1637090552848" duration="1235000" />
+      <workItem from="1637104258068" duration="1522000" />
+      <workItem from="1637266581240" duration="1836000" />
+      <workItem from="1637270802254" duration="8071000" />
+      <workItem from="1637321517939" duration="1838000" />
+      <workItem from="1637323534499" duration="35412000" />
+      <workItem from="1637408430847" duration="14136000" />
+      <workItem from="1637439596937" duration="3474000" />
+      <workItem from="1637492181966" duration="16457000" />
+      <workItem from="1638028174383" duration="2212000" />
+      <workItem from="1638229395913" duration="1027000" />
+      <workItem from="1638230455346" duration="4842000" />
+      <workItem from="1638266975607" duration="4928000" />
+      <workItem from="1638342490241" duration="5364000" />
+      <workItem from="1638347933321" duration="19416000" />
+      <workItem from="1638627237230" duration="2418000" />
+      <workItem from="1638701972765" duration="5293000" />
+      <workItem from="1638823894833" duration="251000" />
+      <workItem from="1639439870811" duration="1031000" />
+      <workItem from="1639936128143" duration="4557000" />
+      <workItem from="1639958161267" duration="1646000" />
+      <workItem from="1639994654500" duration="1938000" />
+      <workItem from="1640005441580" duration="2635000" />
+      <workItem from="1640955465219" duration="18000" />
+      <workItem from="1640962728258" duration="15680000" />
+      <workItem from="1641034400199" duration="467000" />
+      <workItem from="1641035640980" duration="22918000" />
+      <workItem from="1641123799159" duration="28778000" />
+      <workItem from="1641203972878" duration="14337000" />
+      <workItem from="1641388919592" duration="27557000" />
+      <workItem from="1641485171341" duration="23801000" />
+      <workItem from="1641552525749" duration="24482000" />
+      <workItem from="1641640250522" duration="3041000" />
+      <workItem from="1641851510772" duration="1944000" />
+      <workItem from="1641934003435" duration="24000" />
+      <workItem from="1642257599567" duration="6412000" />
+      <workItem from="1642264471693" duration="4183000" />
+      <workItem from="1642337825307" duration="164000" />
+      <workItem from="1642527086536" duration="4709000" />
+      <workItem from="1642584786744" duration="191000" />
+      <workItem from="1642585002504" duration="143000" />
+      <workItem from="1642585210724" duration="13000" />
+    </task>
+    <task id="LOCAL-00001" summary="Various updates">
+      <created>1635768067285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635768067285</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Various updates">
+      <created>1635810639261</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635810639261</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Various updates">
+      <created>1635810678484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635810678484</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[SydariaAddon] Various updates">
+      <created>1636476704411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636476704411</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[SydariaAddon] Various updates">
+      <created>1636918849783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636918849783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../Commandes/HGMod" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Various updates" />
+    <MESSAGE value="[SydariaAddon] Various updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="[SydariaAddon] Various updates" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

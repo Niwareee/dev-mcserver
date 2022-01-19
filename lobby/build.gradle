@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id "net.linguica.maven-settings" version "0.5"
+}
+
+group = 'fr.niware'
+version = '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'io.papermc.paper:paper:1.17.1-R0.1-SNAPSHOT'
+    implementation 'fr.niware:serverapi:1.0-SNAPSHOT'
+}
