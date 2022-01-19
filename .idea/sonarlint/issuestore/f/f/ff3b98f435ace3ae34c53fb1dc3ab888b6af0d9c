@@ -1,8 +1,0 @@
-
-s
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ô°®I8İ²ß³á/
-N
-java:S3011p",This accessibility update should be removed.(¾§¹¿øÿÿÿÿ8ä²ß³á/
-r	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÄÄÙÿÿÿÿÿ8æ²ß³á/
-m	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì‚8æ²ß³á/
-m	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âº¦¯8æ²ß³á/
