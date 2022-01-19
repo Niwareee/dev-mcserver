@@ -104,6 +104,23 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="lobby" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lobby" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lobby" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lobby" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -142,6 +159,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -150,7 +168,7 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
@@ -186,7 +204,7 @@
       <command value="./gradlew shadowJar -Xlint" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.proxy">
+  <component name="RunManager" selected="Gradle.lobby [javadoc]">
     <configuration name="Proxy [generateTemplates]" type="GradleRunConfiguration" factoryName="Gradle" activateToolWindowBeforeRun="false">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -217,27 +235,6 @@
           </ENTRIES>
         </extension>
       </EXTENSION>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Proxy [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/proxy" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="shadowJar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
@@ -403,6 +400,27 @@
         <option name="taskNames">
           <list>
             <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="lobby [javadoc]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/lobby" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="javadoc" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -617,20 +635,20 @@
       <item itemvalue="Gradle.SydariaAddon build" />
       <item itemvalue="Gradle.Proxy [generateTemplates]" />
       <item itemvalue="Gradle.ServerAPI [publishToMavenLocal]" />
-      <item itemvalue="Gradle.Proxy [shadowJar]" />
       <item itemvalue="Gradle.lobby [jar]" />
       <item itemvalue="Gradle.ServerAPI [shadowJar]" />
       <item itemvalue="Gradle.ServerAPI [prepareKotlinBuildScriptModel]" />
       <item itemvalue="Maven.GameAPI build" />
       <item itemvalue="Maven.Hub build" />
+      <item itemvalue="Gradle.lobby [javadoc]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.lobby [javadoc]" />
         <item itemvalue="Gradle.lobby [jar]" />
         <item itemvalue="Gradle.ServerAPI [prepareKotlinBuildScriptModel]" />
         <item itemvalue="Gradle.ServerAPI [shadowJar]" />
         <item itemvalue="Gradle.ServerAPI [publishToMavenLocal]" />
-        <item itemvalue="Gradle.Proxy [shadowJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -750,7 +768,7 @@
       <workItem from="1642527086536" duration="4709000" />
       <workItem from="1642584786744" duration="191000" />
       <workItem from="1642585002504" duration="143000" />
-      <workItem from="1642585210724" duration="13000" />
+      <workItem from="1642585210724" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="Various updates">
       <created>1635768067285</created>

@@ -153,8 +153,6 @@ y
 Iserverapi/src/main/java/fr/niware/serverapi/commons/database/dao/Dao.java,e\a\eae17f4b18c5147bd275b7606c98d61231bbd506
 Å
 Qserverapi/src/main/java/fr/niware/serverapi/commons/database/player/IAccount.java,2\f\2f7d2e4348e3f598b9b336f7829a57a67961acf1
-
-Oserverapi/src/main/java/fr/niware/serverapi/commons/database/dao/PlayerDao.java,5\8\582d6b42b783afa15f0cbc29777372ebd51cdd7b
 Ä
 Pserverapi/src/main/java/fr/niware/serverapi/commons/database/player/Account.java,a\9\a9c07149c708a0bfee985213969bec62367478c4
 {
@@ -173,8 +171,6 @@ Tserverapi/src/main/java/fr/niware/serverapi/commons/database/redis/RedisManager
 .lobby/gradle/wrapper/gradle-wrapper.properties,e\d\ed135019470b78a46d95963d81f6fbc3ed7ac8e1
 h
 8lobby/src/main/java/fr/niware/lobby/world/WorldEnum.java,9\9\99d2301d7ba619bbff53fd7bf8907b7dee284031
-p
-@serverapi/src/main/java/fr/niware/serverapi/paper/ServerAPI.java,d\e\de16094529aef223fddb2470f945c7e047708548
 u
 Eserverapi/src/main/java/fr/niware/serverapi/paper/AbstractPlugin.java,1\7\178c8063d366fff1128ebe8b14b1f1e5f679321a
 B
