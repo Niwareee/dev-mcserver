@@ -28,7 +28,7 @@ public abstract class AbstractProxy {
         this.logger = logger;
 
         try {
-            this.database = new Database(logger, dataDirectory.toFile());
+            this.database = new Database(logger, dataDirectory.toFile(), true, true);
         } catch (Exception exception) {
             exception.printStackTrace();
         }
@@ -45,7 +45,7 @@ public abstract class AbstractProxy {
 
     @Subscribe
     public void onProxyShutdown(ProxyShutdownEvent event) {
-        this.database.getRedisManager().close();
+        this.database.getRedisManager().shutdown();
         this.maintenanceManager.save();
     }
 

@@ -4,20 +4,23 @@ import fr.niware.lobby.config.Items;
 import fr.niware.lobby.gui.MainGui;
 import fr.niware.serverapi.commons.database.player.RankUnit;
 import fr.niware.serverapi.paper.AbstractPlugin;
+import fr.niware.serverapi.paper.config.IConfigManager;
 import fr.niware.serverapi.paper.registers.AbstractListener;
 import io.papermc.paper.chat.ChatRenderer;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
-import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 public class PlayerListener extends AbstractListener {
 
+    private final IConfigManager configManager;
+
     public PlayerListener(AbstractPlugin plugin) {
         super(plugin);
+        this.configManager = plugin.getConfigManager();
     }
 
     @EventHandler
@@ -36,9 +39,7 @@ public class PlayerListener extends AbstractListener {
     @EventHandler
     public void onInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
-        if (player.getGameMode() != GameMode.CREATIVE) {
-            event.setCancelled(true);
-        }
+        event.setCancelled(!this.configManager.isInteractable() && !player.isOp());
 
         if (event.getItem() == null) {
             return;

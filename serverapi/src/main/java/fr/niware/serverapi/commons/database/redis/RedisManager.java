@@ -55,7 +55,7 @@ public class RedisManager {
         return liveObjectService.get(IAccount.class, uuid);
     }
 
-    public void close() {
+    public void shutdown() {
         this.redisson.shutdown();
     }
 }

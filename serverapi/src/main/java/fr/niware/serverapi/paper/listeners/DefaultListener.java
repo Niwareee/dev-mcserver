@@ -1,6 +1,7 @@
-package fr.niware.lobby.listeners;
+package fr.niware.serverapi.paper.listeners;
 
 import fr.niware.serverapi.paper.AbstractPlugin;
+import fr.niware.serverapi.paper.config.IConfigManager;
 import fr.niware.serverapi.paper.registers.AbstractListener;
 import org.bukkit.GameMode;
 import org.bukkit.event.EventHandler;
@@ -10,61 +11,50 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 
 public class DefaultListener extends AbstractListener {
 
+    private final IConfigManager configManager;
+
     public DefaultListener(AbstractPlugin plugin) {
         super(plugin);
+        this.configManager = plugin.getConfigManager();
     }
 
     @EventHandler
     public void onDamage(EntityDamageEvent event) {
-        event.setCancelled(true);
+        event.setCancelled(!this.configManager.isDamageable());
     }
 
     @EventHandler
     public void onHunger(FoodLevelChangeEvent event) {
-        event.setCancelled(true);
+        event.setCancelled(!this.configManager.isFoodable());
     }
 
     @EventHandler
     public void onPickup(EntityPickupItemEvent event) {
-        event.setCancelled(true);
+        event.setCancelled(!this.configManager.isInteractable());
     }
 
     @EventHandler
     public void onDrop(PlayerDropItemEvent event) {
-        if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
-            event.setCancelled(true);
-        }
-    }
-
-    @EventHandler
-    public void onPlace(BlockPlaceEvent event) {
-        if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
-            event.setCancelled(true);
-        }
-    }
-
-    @EventHandler
-    public void onBreak(BlockBreakEvent event) {
-        if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
-            event.setCancelled(true);
-        }
+        event.setCancelled(!this.configManager.isInteractable() && event.getPlayer().getGameMode() != GameMode.CREATIVE);
     }
 
     @EventHandler
     public void onClick(InventoryClickEvent event) {
-        if (event.getWhoClicked().getGameMode() != GameMode.CREATIVE) {
-            event.setCancelled(true);
-        }
+        event.setCancelled(!this.configManager.isInteractable() && event.getWhoClicked().getGameMode() != GameMode.CREATIVE);
     }
 
     @EventHandler
-    public void onDrag(InventoryDragEvent event) {
-        System.out.println(event.getCursor());
-        System.out.println(event.getOldCursor());
+    public void onPlace(BlockPlaceEvent event) {
+        event.setCancelled(!this.configManager.isBuildable() && event.getPlayer().getGameMode() != GameMode.CREATIVE);
+    }
+
+    @EventHandler
+    public void onBreak(BlockBreakEvent event) {
+        event.setCancelled(!this.configManager.isBuildable() && event.getPlayer().getGameMode() != GameMode.CREATIVE);
     }
 }
+

@@ -21,7 +21,7 @@ public class LagCommand extends AbstractCommand {
     @Override
     public boolean execute(@NotNull CommandSender sender, @NotNull String label, @NotNull String[] args) {
         if (!(sender instanceof Player player)) {
-            sender.sendMessage(Messages.NO_PERMISSION.getMessage());
+            sender.sendMessage(Messages.CONSOLE_COMMAND.getMessage());
             return true;
         }
 
@@ -34,7 +34,7 @@ public class LagCommand extends AbstractCommand {
         player.sendMessage(" ");
         player.sendMessage(" §7» §eInformations du serveur:");
         player.sendMessage(" ");
-        player.sendMessage("§8• §7Date: §f" + new SimpleDateFormat("HH'h'mm dd/MM/yyyy").format(System.currentTimeMillis()));
+        player.sendMessage("§8• §7Date: §f" + new SimpleDateFormat("HH'h'mm 'à' dd/MM/yyyy").format(System.currentTimeMillis()));
         player.sendMessage("§8• §7Serveur: §6" + this.plugin.getConfigManager().getServerConfig().getServerType().getName() + " #" + this.plugin.getConfigManager().getServerConfig().getId());
         player.sendMessage("§8• §7Lag serveur: " + StringUtils.join(tpsAvg, ", "));
         player.sendMessage("§8• §7Lag client: §a" + player.getPing() + " ms");

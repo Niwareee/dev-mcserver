@@ -6,7 +6,7 @@ public enum RankUnit {
 
     PLAYER("§fJoueur", "§7", "§7", "§7", 0, 3, false),
     HELPER("§bAssistant", "§7[§bA§7] §b", "§7[§bAssistant§7] §b", "§b", 70, 2, true),
-    MOD("§2Modérateur", "§7[§2M§7] §2", "§7[§2Modo§7] §2", "§2", 80, 1, true),
+    MOD("§2Modo", "§7[§2M§7] §2", "§7[§2Modo§7] §2", "§2", 80, 1, true),
     ADMIN("§4Admin", "§7[§4A§7] §4", "§7[§4Admin§7] §4", "§c", 100, 0, true);
 
     private final String name;

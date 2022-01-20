@@ -7,7 +7,5 @@ public class LobbyConfig extends AbstractConfigManager {
 
     public LobbyConfig(AbstractPlugin plugin) {
         super(plugin);
-
-        plugin.getServer().setMaxPlayers(this.serverConfig.getMaxPlayers());
     }
 }

@@ -4,9 +4,12 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.niware.serverapi.commons.database.throwing.ThrowingConsumer;
 import fr.niware.serverapi.commons.database.throwing.ThrowingFunction;
+import fr.niware.serverapi.commons.file.config.ConfigUtils;
 import org.intellij.lang.annotations.Language;
 import org.slf4j.Logger;
 
+import java.io.File;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -24,9 +27,11 @@ public class SQLDatabase {
     private final Logger logger;
     private final HikariDataSource hikariDataSource;
 
-    public SQLDatabase(Logger logger, SQLCredentials credentials) {
+    public SQLDatabase(Logger logger, File file) {
         long start = System.currentTimeMillis();
         this.logger = logger;
+
+        SQLCredentials credentials = new ConfigUtils(logger, "database.json", file).getSQLCredentials();
 
         final HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setJdbcUrl(String.format(SQLDatabase.URL_TEMPLATE, credentials.getHost(), credentials.getPort(), credentials.getName()));
@@ -60,7 +65,7 @@ public class SQLDatabase {
         return this.hikariDataSource != null && !this.hikariDataSource.isClosed();
     }
 
-    public void disconnect() {
+    public void close() {
         this.hikariDataSource.close();
         this.logger.info("Database successfully disconnected");
     }

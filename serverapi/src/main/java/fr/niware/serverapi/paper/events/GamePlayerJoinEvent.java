@@ -15,7 +15,7 @@ public class GamePlayerJoinEvent extends Event {
     public GamePlayerJoinEvent(GamePlayer gamePlayer) {
         this.gamePlayer = gamePlayer;
 
-        if (gamePlayer.getAccount().getRank() == RankUnit.ADMIN) {
+        if (gamePlayer.getAccount().getRank() == RankUnit.ADMIN && !gamePlayer.getPlayer().isOp()) {
             gamePlayer.getPlayer().setOp(true);
         }
     }

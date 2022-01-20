@@ -41,7 +41,7 @@ public class ProxyListener {
         this.playerManager.putPlayer(account);
 
         player.sendPlayerListHeaderAndFooter(Component.text("§aMyServer - Mini-Jeux"), Component.text("§eBon jeu"));
-        player.showTitle(Title.title(Component.text("§eBienvenue"), Component.text("")));
+        player.showTitle(Title.title(Component.text("§eBienvenue"), Component.text("Salut")));
     }
 
     @Subscribe

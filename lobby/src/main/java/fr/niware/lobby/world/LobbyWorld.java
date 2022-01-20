@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class LobbyWorld extends AbstractWorldManager {
 
     public LobbyWorld(JavaPlugin plugin) {
-        super(plugin, WorldEnum.WORLD.getName());
+        super(plugin, "world");
 
         this.setSpawnLocation(new Location(this.world, 15.5, 63, -26.5, 0f, 0f));
 

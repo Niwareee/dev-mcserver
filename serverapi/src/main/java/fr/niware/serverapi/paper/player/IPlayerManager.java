@@ -15,5 +15,5 @@ public interface IPlayerManager {
 
     void putPlayer(GamePlayer playerData);
 
-    void removePlayer(UUID uuid);
+    GamePlayer removePlayer(UUID uuid);
 }

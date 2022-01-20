@@ -1,6 +1,7 @@
 package fr.niware.serverapi.paper.scoreboard;
 
 import fr.niware.serverapi.paper.player.GamePlayer;
+import fr.niware.serverapi.paper.scoreboard.fastboard.FastBoard;
 import org.bukkit.entity.Player;
 
 public interface IBoardManager {
@@ -9,7 +10,7 @@ public interface IBoardManager {
 
     void handleLeave(Player player);
 
-    String getBoardName();
+    void create(FastBoard board);
 
-    String[] getLines(GamePlayer gamePlayer);
+    void update(FastBoard board);
 }

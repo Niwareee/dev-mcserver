@@ -23,15 +23,14 @@ public abstract class AbstractBoardManager implements IBoardManager {
 
         plugin.getServer().getScheduler().runTaskTimerAsynchronously(plugin, () -> {
             for (FastBoard board : this.boards.values()) {
-                String[] lines = this.getLines(board.getGamePlayer());
-                board.updateLines(lines);
+                this.update(board);
             }
         }, 20L, 20L);
     }
 
     public void handleJoin(GamePlayer gamePlayer) {
         FastBoard board = new FastBoard(gamePlayer);
-        board.updateTitle(this.getBoardName());
+        this.create(board);
         this.boards.put(gamePlayer.getPlayer().getUniqueId(), board);
     }
 

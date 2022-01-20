@@ -2,14 +2,14 @@ package fr.niware.serverapi.paper;
 
 import fr.niware.serverapi.commons.database.Database;
 import fr.niware.serverapi.commons.database.IDatabase;
-import fr.niware.serverapi.commons.database.redis.RedisManager;
+import fr.niware.serverapi.paper.commands.InfoCommand;
 import fr.niware.serverapi.paper.commands.LagCommand;
-import fr.niware.serverapi.paper.game.IGameManager;
-import fr.niware.serverapi.paper.listeners.redis.ConnectionRedisListener;
-import fr.niware.serverapi.paper.player.IPlayerManager;
 import fr.niware.serverapi.paper.commands.VersionCommand;
 import fr.niware.serverapi.paper.config.IConfigManager;
+import fr.niware.serverapi.paper.listeners.DefaultListener;
 import fr.niware.serverapi.paper.listeners.PlayerListener;
+import fr.niware.serverapi.paper.listeners.redis.ConnectionRedisListener;
+import fr.niware.serverapi.paper.player.IPlayerManager;
 import fr.niware.serverapi.paper.scoreboard.IBoardManager;
 import fr.niware.serverapi.paper.utils.CommandUnregister;
 import fr.niware.serverapi.paper.world.IWorldManager;
@@ -21,18 +21,15 @@ public abstract class AbstractPlugin extends JavaPlugin {
 
     protected IConfigManager configManager;
     protected IPlayerManager playerManager;
-    protected IGameManager gameManager;
     protected IBoardManager boardManager;
     protected IWorldManager worldManager;
-
-    protected RedisManager redisManager;
 
     @Override
     public void onEnable() {
         long start = System.currentTimeMillis();
 
         try {
-            this.database = new Database(this.getSLF4JLogger(), this.getDataFolder());
+            this.database = new Database(this.getSLF4JLogger(), this.getDataFolder(), true, true);
             this.database.getRedisManager().addMessagingListener(new ConnectionRedisListener(this));
         } catch (IllegalStateException exception) {
             this.getPluginLoader().disablePlugin(this);
@@ -40,53 +37,47 @@ public abstract class AbstractPlugin extends JavaPlugin {
 
         this.enable();
 
-        this.configManager = this.getConfigManager();
-        this.playerManager = this.getPlayerManager();
-        this.gameManager = this.getGameManager();
-        this.boardManager = this.getBoardManager();
-        this.worldManager = this.getWorldManager();
-
         new LagCommand(this).register(this);
+        new InfoCommand(this).register(this);
         new PlayerListener(this).register(this);
+        new DefaultListener(this).register(this);
 
         Runtime runtime = Runtime.getRuntime();
         this.getLog4JLogger().info("Running with {} threads and {} Mo.", runtime.availableProcessors(), runtime.maxMemory() / 1024L / 1024L);
         this.getLog4JLogger().info("{} successfully enabled in {} ms", this.getName(), System.currentTimeMillis() - start);
 
         this.getServer().getScheduler().runTaskLaterAsynchronously(this, () -> {
-            CommandUnregister.unregisterCommands("minecraft", "help", "tell", "me", "trigger", "say");
+            CommandUnregister.unregisterCommands("minecraft", "ver", "version", "help", "tell", "me", "trigger", "say");
             CommandUnregister.unregisterCommands("bukkit", "about", "help", "?", "icanhasbukkit");
-
             new VersionCommand(this).register(this);
         }, 10L);
     }
 
     @Override
     public void onDisable() {
-        this.redisManager.close();
-    }
-
-    public void getTest() {
-
+        this.database.getRedisManager().shutdown();
+        this.database.getSQLDatabase().close();
     }
 
     public IDatabase getDatabase() {
         return this.database;
     }
 
-    public RedisManager getRedisManager() {
-        return this.redisManager;
+    public IConfigManager getConfigManager() {
+        return this.configManager;
+    }
+
+    public IPlayerManager getPlayerManager() {
+        return this.playerManager;
+    }
+
+    public IBoardManager getBoardManager() {
+        return this.boardManager;
+    }
+
+    public IWorldManager getWorldManager() {
+        return this.worldManager;
     }
 
     public abstract void enable();
-
-    public abstract IConfigManager getConfigManager();
-
-    public abstract IPlayerManager getPlayerManager();
-
-    public abstract IGameManager getGameManager();
-
-    public abstract IBoardManager getBoardManager();
-
-    public abstract IWorldManager getWorldManager();
 }

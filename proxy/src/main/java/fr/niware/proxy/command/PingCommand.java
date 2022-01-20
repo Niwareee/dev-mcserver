@@ -2,6 +2,7 @@ package fr.niware.proxy.command;
 
 import com.velocitypowered.api.command.CommandSource;
 import com.velocitypowered.api.proxy.Player;
+import fr.niware.serverapi.commons.utils.Messages;
 import fr.niware.serverapi.velocity.AbstractProxy;
 import fr.niware.serverapi.velocity.register.AbstractCommand;
 import net.kyori.adventure.text.Component;
@@ -32,7 +33,7 @@ public final class PingCommand extends AbstractCommand {
 
         Optional<Player> optionalTarget = this.plugin.getServer().getPlayer(args[0]);
         if (optionalTarget.isEmpty()) {
-            source.sendMessage(Component.text("§cErreur: Le joueur '§f" + args[0] + "§c' n'est pas connecté."));
+            source.sendMessage(Messages.PLAYER_NOT_CONNECTED.getMessage(args[0]));
             return;
         }
 

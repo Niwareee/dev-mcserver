@@ -9,6 +9,7 @@ public enum Messages {
     NO_PERMISSION("§cErreur: Vous n'avez pas la permission."),
     MAINTENANCE("§cLe serveur est en maintenance\n§cRetour très bientôt"),
     HUB_ALREADY_CONNECTED("§cErreur: Vous êtes déjà connecté sur ce hub."),
+    PLAYER_NOT_CONNECTED("§cErreur: Le joueur '§f%s§c' n'est pas connecté.");
     ;
 
     private final String message;
@@ -19,5 +20,9 @@ public enum Messages {
 
     public Component getMessage() {
         return Component.text(this.message);
+    }
+
+    public Component getMessage(Object... objects) {
+        return Component.text(String.format(this.message, objects));
     }
 }

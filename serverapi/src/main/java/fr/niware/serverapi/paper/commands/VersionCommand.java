@@ -4,6 +4,7 @@ import fr.niware.serverapi.paper.AbstractPlugin;
 import fr.niware.serverapi.paper.registers.AbstractCommand;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginDescriptionFile;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;
 
@@ -14,7 +15,7 @@ public class VersionCommand extends AbstractCommand {
     }
 
     @Override
-    public boolean execute(@Nonnull CommandSender sender, @Nonnull String label, String[] args) {
+    public boolean execute(@Nonnull CommandSender sender, @Nonnull String label, @NotNull String[] args) {
         PluginDescriptionFile description = this.plugin.getDescription();
         sender.sendMessage("§a" + description.getName() + " v" + description.getVersion() + " sur la version " + description.getAPIVersion());
         return true;

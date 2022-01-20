@@ -11,4 +11,8 @@ public interface IAccount {
     void setRank(RankUnit rank);
 
     int getCoins();
+
+    String getFirstConnection();
+
+    String getLastConnection();
 }

@@ -2,6 +2,7 @@ package fr.niware.serverapi.paper.listeners;
 
 import fr.niware.serverapi.paper.AbstractPlugin;
 import fr.niware.serverapi.paper.events.GamePlayerJoinEvent;
+import fr.niware.serverapi.paper.events.GamePlayerQuitEvent;
 import fr.niware.serverapi.paper.player.GamePlayer;
 import fr.niware.serverapi.paper.registers.AbstractListener;
 import org.bukkit.entity.Player;
@@ -33,6 +34,8 @@ public class PlayerListener extends AbstractListener {
 
         Player player = event.getPlayer();
         this.plugin.getBoardManager().handleLeave(player);
-        this.plugin.getPlayerManager().removePlayer(player.getUniqueId());
+
+        GamePlayer gamePlayer = this.plugin.getPlayerManager().removePlayer(player.getUniqueId());
+        this.plugin.getServer().getPluginManager().callEvent(new GamePlayerQuitEvent(gamePlayer));
     }
 }

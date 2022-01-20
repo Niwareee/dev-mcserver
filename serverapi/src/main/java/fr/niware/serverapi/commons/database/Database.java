@@ -11,23 +11,21 @@ import java.io.File;
 
 public class Database implements IDatabase {
 
-    protected final SQLDatabase sqlDatabase;
-    protected final RedisManager redisManager;
+    private final SQLDatabase sqlDatabase;
+    private final RedisManager redisManager;
     private final PlayerDao playerDao;
 
-    public Database(Logger logger, File path) {
+    public Database(Logger logger, File file, boolean needRedis, boolean needSQL) {
         try {
             Class.forName("org.mariadb.jdbc.Driver");
         } catch (ClassNotFoundException exception) {
             exception.printStackTrace();
         }
 
-        this.redisManager = new RedisManager(logger.getName());
+        this.redisManager = needRedis ? new RedisManager(logger.getName()) : null;
 
-        SQLCredentials credentials = new ConfigUtils(logger, "database.json", path).getSQLCredentials();
-        this.sqlDatabase = new SQLDatabase(logger, credentials);
-
-        this.playerDao = new PlayerDao(this.sqlDatabase, logger);
+        this.sqlDatabase = needSQL ? new SQLDatabase(logger, file) : null;
+        this.playerDao = needSQL ? new PlayerDao(this.sqlDatabase, logger) : null;
     }
 
     @Override

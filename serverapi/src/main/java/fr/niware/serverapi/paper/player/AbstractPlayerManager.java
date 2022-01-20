@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public abstract class AbstractPlayerManager implements IPlayerManager {
 
-    private final Map<UUID, GamePlayer> players = new HashMap<>();
+    public final Map<UUID, GamePlayer> players = new HashMap<>();
 
     @Override
     public Map<UUID, GamePlayer> getPlayers() {
@@ -31,7 +31,7 @@ public abstract class AbstractPlayerManager implements IPlayerManager {
     }
 
     @Override
-    public void removePlayer(UUID uuid) {
-        this.players.remove(uuid);
+    public GamePlayer removePlayer(UUID uuid) {
+        return this.players.remove(uuid);
     }
 }

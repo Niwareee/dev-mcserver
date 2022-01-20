@@ -10,13 +10,7 @@ import fr.niware.serverapi.paper.player.GamePlayer;
 import java.lang.reflect.Type;
 import java.util.function.Consumer;
 
-public class ConnectionRedisListener implements Consumer<String> {
-
-    private final AbstractPlugin plugin;
-
-    public ConnectionRedisListener(AbstractPlugin plugin) {
-        this.plugin = plugin;
-    }
+public record ConnectionRedisListener(AbstractPlugin plugin) implements Consumer<String> {
 
     @Override
     public void accept(String msg) {
@@ -28,6 +22,7 @@ public class ConnectionRedisListener implements Consumer<String> {
                 .create();
         Type type = new TypeToken<Account>() {
         }.getType();
+
         this.plugin.getPlayerManager().putPlayer(new GamePlayer(gson.fromJson(msg, type)));
 
         this.plugin.getLogger().info("GET Redis in " + (System.currentTimeMillis() - start) + " ms");
